@@ -12,8 +12,9 @@ Fork
 ```
 1.添加中文适配
 2.原版不支持gif图片，增加gif图片适配
-3.内置运行环境与model
-  (1) Github上传几次都失败，于是把模型、依赖、ffmpeg进行了打包。启动项目前先将zip解压至当前目录；
-  (2) windows 直接运行 start.bat 即可使用；
-  (3) linux 需手动下载 ffmpeg ，将 ffmpeg 的 bin 添加至环境变量中，运行 python facefusion.py run 即可。
+3.运行
+  (1) github上传文件最大25MB，百度网盘最大支持4GB，所以无法上传依赖和模型等，进行以下操作安装依赖；
+	a) 跳转 https://ffmpeg.org/ 下载 ffmpeg，将 ffmpeg 的 bin 添加至环境变量中；
+	b) 运行 python install 进行安装依赖；
+	c) 执行 python facefusion.py run 启动程序，点击切换模型则会自动从 github 或 hugging face 下载模型，hugging face下载需要科学上网。
 ```
